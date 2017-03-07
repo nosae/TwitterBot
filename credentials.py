@@ -36,19 +36,11 @@ temp = model_combo.make_short_sentence(500)
 name = random.choice(listOfAth)
 #print("Name: " + name)
 #The Secret Stuff
-#CONSUMER_KEY='UgFKLuORlSybd1cd4ozf4PgHe'
-#CONSUMER_SECRET='Lsp0HymDxOQPaoAm7vsdQMrgKwrLyYlBNMWOiueZd1ZquzWGhH'
-#ACCESS_KEY='837052692551782400-s4N8bYZRn4kao6TUCwuN2x3eHoEeCtU'
-#ACCESS_SECRET='8l2RqUe4ZY4NTuQIqAnvCVUYJVUSJQMyIgWMr3C7QHvSX'
+CONSUMER_KEY='UgFKLuORlSybd1cd4ozf4PgHe'
+CONSUMER_SECRET='Lsp0HymDxOQPaoAm7vsdQMrgKwrLyYlBNMWOiueZd1ZquzWGhH'
+ACCESS_KEY='837052692551782400-s4N8bYZRn4kao6TUCwuN2x3eHoEeCtU'
+ACCESS_SECRET='8l2RqUe4ZY4NTuQIqAnvCVUYJVUSJQMyIgWMr3C7QHvSX'
 
-#BlobBot Below
-CONSUMER_KEY = 'hETlfJv32tJDRZAy56gRlsyNM'
-# Consumer Secret (API Secret)
-CONSUMER_SECRET = '0b3ZAADUSfCd5SEHzw5STlvLWyhRV7oWx0qSkbBRs1xa3Jw3at'
-# Access Token
-ACCESS_KEY = '836076464797708288-PFGXutxkzrsZ2m1xcec6pIfZv4gyDc5'
-# Access Token Secret
-ACCESS_SECRET = 'YzEHE8FfkNLbbzfu8dj2Rpl1lSJRW5R0z8xVdHRbD2f4U'
 #Update to Twitter
 auth = tweepy.OAuthHandler(CONSUMER_KEY, CONSUMER_SECRET)
 auth.set_access_token(ACCESS_KEY, ACCESS_SECRET)
