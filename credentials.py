@@ -14,6 +14,54 @@ with open('names.txt','r') as f:
 with open("MarkovMod.txt") as t:
 	abc = t.read()
 
+def getPic(name): 
+	f1Name = ""
+	if name == "Usain Bolt": 
+		f1Name = os.path.abspath('AthletePic/Usain Bolt.jpg')
+	elif name == "Michael Jordan":
+		f1Name = os.path.abspath('AthletePic/Michael Jordan.jpg')
+	elif name == "Kobe Bryant":
+		f1Name = os.path.abspath('AthletePic/Kobe Bryant.jpg')
+	elif name == "Tiger Woods":
+		f1Name = os.path.abspath('AthletePic/Tiger Woods.jpg')
+	elif name == "Michael Jordan":
+		f1Name = os.path.abspath('AthletePic/Michael Jordan.jpg')
+	elif name == "The MIT Blackjack Team":
+		f1Name = os.path.abspath('AthletePic/The MIT Blackjack Team.jpg')
+	elif name == "Muhammad Ali":
+		f1Name = os.path.abspath('AthletePic/Muhammad Ali.jpg')
+	elif name == "Shaquille O\'Neal":
+		f1Name = os.path.abspath('AthletePic/Shaquille ONeal.jpg')
+	elif name == "Stephen Curry":
+		f1Name = os.path.abspath('AthletePic/Stephen Curry.jpg')
+	elif name == "Kevin Durant":
+		f1Name = os.path.abspath('AthletePic/Kevin Durant.jpg')
+	elif name == "Lance Armstrong":
+		f1Name = os.path.abspath('AthletePic/Lance Armstrong.jpg')
+	elif name == "Lionel Messi":
+		f1Name = os.path.abspath('AthletePic/Lionel Messi.jpg')
+	elif name == "Floyd Mayweather":
+		f1Name = os.path.abspath('AthletePic/Floyd Mayweather.jpg')
+	elif name == "Michael Phelps":
+		f1Name = os.path.abspath('AthletePic/Michael Phelps.jpg')
+	elif name == "Peyton Manning":
+		f1Name = os.path.abspath('AthletePic/Peyton Manning.jpg')
+	elif name == "Serena Williams":
+		f1Name = os.path.abspath('AthletePic/Serena Williams.jpg')
+	elif name == "Babe Ruth":
+		f1Name = os.path.abspath('AthletePic/Babe Ruth.jpg'	)
+	elif name == "Mike Tyson":
+		f1Name = os.path.abspath('AthletePic/Mike Tyson.jpg')	
+	elif name == "Valentia Vezzai":
+		f1Name = os.path.abspath('AthletePic/Valentia Vezzai.jpg')
+	elif name == "Dan Lin":
+		f1Name = os.path.abspath('AthletePic/Dan Lin.jpg')	
+	elif name == "Carl Lewis":
+		f1Name = os.path.abspath('AthletePic/Carl Lewis.jpg')	
+	elif name == "David Douillet":
+		f1Name = os.path.abspath('AthletePic/David Douillet.jpg')			
+	return f1Name
+
 while 1:
 	#building the model
 	test_model = markovify.NewlineText(text)
@@ -50,13 +98,7 @@ while 1:
 
 	print(final)
 	#Find picture now from list of names
-	#change directory
-	#dir = os.chdir('/AthletePic/')
-	filename = os.path.abspath('AthletePic/Michael Phelps.jpg')
-
-	#print(filename)
+	filename = getPic(name)
 	#api.update_status(final)
-	#api.update_with_media(filename,final)
-	time.sleep(2)
-
-	#time.sleep(100)
+	api.update_with_media(filename,final)
+	time.sleep(100)
